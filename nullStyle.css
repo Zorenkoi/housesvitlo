@@ -1,0 +1,290 @@
+/* Вказуємо box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Забираємо внутрішні відступи */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Забираємо зовнішні відступи */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Виставляємо основні налаштування за замовчуванням для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Видаляємо стандартну стилізацію для всіх ul та il, які мають атрибут class*/
+ul[class],
+ol[class] {
+  /* list-style: none; */
+}
+
+/* Елементи a, які не мають класу, скидаємо до дефолтних стилів */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Спрощуємо роботу із зображеннями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Вказуємо зрозумілу періодичність у потоці даних у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наслідуємо шрифти для інпутів та кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Видаляємо всі анімації та переходи для людей, які вважай за краще їх не використовувати */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important ;
+    animation-iteration-count: 1 !important ;
+    transition-duration: 0.01ms !important ;
+    scroll-behavior: auto !important ;
+  }
+}
+
+.home-content {
+  color: white;
+  background-color: black;
+  padding: 20px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 35px;
+  text-align: center;
+}
+
+.text-content {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.slide {
+  width: 100%;
+}
+
+.examples-img-container {
+  padding-top: 100%;
+  position: relative;
+}
+.instructions-img-container {
+  padding-top: calc(90%);
+  position: relative;
+}
+.reviews-img-container {
+  padding-top: calc(100%);
+  position: relative;
+}
+.spaceman-img-container {
+  padding-top: calc(100%);
+  position: relative;
+}
+
+@media (max-width: 500px) {
+  .instructions-img-container {
+    padding-top: calc(110%);
+  }
+  .reviews-img-container {
+    padding-top: calc(120%);
+    position: relative;
+  }
+
+  .spaceman-img-container {
+    padding-top: calc(120%);
+    position: relative;
+  }
+}
+@media (max-width: 400px) {
+  .instructions-img-container {
+    padding-top: calc(143%);
+  }
+  .reviews-img-container {
+    padding-top: calc(140%);
+    position: relative;
+  }
+  .spaceman-img-container {
+    padding-top: calc(140%);
+    position: relative;
+  }
+}
+@media (max-width: 330px) {
+  .reviews-img-container {
+    padding-top: calc(181%);
+    position: relative;
+  }
+}
+
+.swiper-with-pagination .swiper-pagination {
+  bottom: 7.5px;
+  height: 25px;
+}
+.swiper-with-pagination .swiper-pagination-bullet {
+  transition: opacity 0.2s;
+  position: relative;
+  width: 25px;
+  height: 25px;
+  background-color: inherit;
+  border-radius: 0px;
+}
+.swiper-with-pagination .swiper-pagination-bullet:hover {
+  opacity: 0.5;
+}
+.swiper-with-pagination .swiper-pagination-bullet::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #313131;
+}
+
+.navigation-button {
+  position: absolute;
+  width: 36px;
+  height: 48px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  opacity: 0.8;
+}
+.navigation-button:hover {
+  opacity: 1;
+}
+.exsamples-prev {
+  left: 15px;
+  justify-content: flex-start;
+}
+.exsamples-next {
+  right: 15px;
+  justify-content: flex-end;
+}
+.instructions-prev {
+  left: 15px;
+  justify-content: flex-start;
+}
+.instructions-next {
+  right: 15px;
+  justify-content: flex-end;
+}
+.prev-button {
+  left: 15px;
+  justify-content: flex-start;
+}
+.next-button {
+  right: 15px;
+  justify-content: flex-end;
+}
+
+.arrow {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #4a4a4a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.arrow-prev {
+  transform: rotate(180deg);
+}
+.arrow-next {
+}
+
+.arrow-img {
+  width: 10px;
+  height: 10px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+.buy-section {
+  padding: 35px 0px;
+  display: grid;
+  gap: 20px;
+}
+
+.usage-header {
+  text-align: center;
+}
+.usage-section {
+  padding: 30px 0px;
+  display: grid;
+  gap: 30px;
+}
+
+.hope {
+  height: 300px;
+  width: 100%;
+}
+
+.description-section {
+  background-color: black;
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+.description-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  object-fit: contain;
+}
+
+@media (max-width: 400px) {
+  .description-section {
+    height: unset;
+  }
+  .description-img {
+    position: unset;
+    width: unset;
+    height: unset;
+    object-fit: unset;
+  }
+}
