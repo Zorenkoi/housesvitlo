@@ -13,31 +13,35 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="./nullStyle.css" />
-    <link rel="stylesheet" href="./style.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./assets/style/nullStyle.css" />
+    <link rel="stylesheet" href="./assets/style/style.css" />
+    <title>Svitlo</title>
   </head>
   <body>
     <div class="wrapper">
       <div class="home-img-container">
-        <img src="./images/home-img.jpeg" alt="home" class="home-img" />
+        <img src="./assets/images/home-img.jpeg" alt="home" />
       </div>
+      <!-- //////////////////////////////////////// -->
 
       <div class="home-content">
-        <div class="home-text1">
+        <div class="header-3">
           <span class="blue-text">1250 грн</span>
           <span class="crossed-text">1450 грн</span>
         </div>
 
-        <div class="home-text2">Другий проектор — 1100 грн</div>
+        <div class="text">Другий проектор — 1100 грн</div>
 
-        <button class="home-button">Замовити зараз</button>
+        <a href="#form" class="button-link">
+          <button class="home-button button-light-white">Замовити зараз</button>
+        </a>
       </div>
 
-      <!-- ///////////////////////////////////////// -->
+      <!-- ///////////////////////////////////////////////////////////////// -->
 
       <div class="about-content">
-        <div class="text-bold">Світло завжди перемагає темряву</div>
+        <div class="header-3">Світло завжди перемагає темряву</div>
+
         <div class="text">
           Перетвори будь-яку кімнату в магічний космос за допомогою нашого
           <span class="text-bold">Проектора Svitlo.</span>
@@ -49,17 +53,16 @@
         </div>
       </div>
 
-      <!-- ///////////////////////////////////////// -->
+      <!-- ///////////////////////////////////////////////////////////// -->
 
       <div class="exsamples-container">
         <div class="exsamples-swiper swiper swiper-with-pagination">
           <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
+          <div class="swiper-wrapper" id="examples">
             <div class="slide swiper-slide">
               <div class="examples-img-container">
                 <img
-                  src="./images/bed-blue.jpeg"
+                  src="./assets/images/examples-1.jpg"
                   alt=""
                   class="img-short-cover"
                 />
@@ -68,25 +71,7 @@
             <div class="slide swiper-slide">
               <div class="examples-img-container">
                 <img
-                  src="./images/bed-blue.jpeg"
-                  alt=""
-                  class="img-short-cover"
-                />
-              </div>
-            </div>
-            <div class="slide swiper-slide">
-              <div class="examples-img-container">
-                <img
-                  src="./images/bed-blue.jpeg"
-                  alt=""
-                  class="img-short-cover"
-                />
-              </div>
-            </div>
-            <div class="slide swiper-slide">
-              <div class="examples-img-container">
-                <img
-                  src="./images/bed-blue.jpeg"
+                  src="./assets/images/examples-2.jpg"
                   alt=""
                   class="img-short-cover"
                 />
@@ -99,27 +84,29 @@
           <!-- If we need navigation buttons -->
           <div class="examples-prev navigation-button prev-button">
             <div class="arrow-prev arrow">
-              <img src="./images/arrow.png" class="arrow-img" />
+              <img src="./assets/images/arrow.png" class="arrow-img" />
             </div>
           </div>
           <div class="examples-next navigation-button next-button">
             <div class="arrow-next arrow">
-              <img src="./images/arrow.png" class="arrow-img" />
+              <img src="./assets/images/arrow.png" class="arrow-img" />
             </div>
           </div>
-
-          <!-- If we need scrollbar -->
-          <!-- <div class="swiper-scrollbar"></div> -->
         </div>
       </div>
 
-      <!-- ///////////////////////////////////////// -->
+      <!-- ///////////////////////////////////////////////////// -->
 
       <div class="description-section">
-        <img src="./images/descriptions.png" alt="" class="description-img" />
+        <img
+          src="./assets/images/descriptions.png"
+          alt=""
+          class="description-img"
+        />
       </div>
 
-      <!-- ///////////////////////////////////////// -->
+      <!-- /////////////////////////////////////////////////////////////// -->
+
       <div class="buy-section">
         <div class="gif-container">
           <div class="iframe-container">
@@ -131,20 +118,24 @@
           </div>
         </div>
         <div class="button-container">
-          <button class="home-button">Замовити зараз</button>
+          <a href="#form" class="button-link">
+            <button class="home-button button-light-gray">
+              Замовити зараз
+            </button>
+          </a>
         </div>
       </div>
-      <!-- ///////////////////////////////////////// -->
+      <!-- //////////////////////////////////////////////// -->
 
       <div class="text-content">
         <div class="usage-section">
-          <h2 class="usage-header text-bold">Варіанти використання</h2>
+          <h2 class="usage-header header-2">Варіанти використання</h2>
 
-          <ul class="usage-list">
+          <div class="usage-list">
             <li class="usage-item">
               <div class="usage-icon-container">
                 <img
-                  src="./images/check-circle.svg"
+                  src="./assets/images/check-circle.svg"
                   alt=""
                   class="img-contain"
                 />
@@ -154,7 +145,7 @@
             <li class="usage-item">
               <div class="usage-icon-container">
                 <img
-                  src="./images/check-circle.svg"
+                  src="./assets/images/check-circle.svg"
                   alt=""
                   class="img-contain"
                 />
@@ -164,7 +155,7 @@
             <li class="usage-item">
               <div class="usage-icon-container">
                 <img
-                  src="./images/check-circle.svg"
+                  src="./assets/images/check-circle.svg"
                   alt=""
                   class="img-contain"
                 />
@@ -174,7 +165,7 @@
             <li class="usage-item">
               <div class="usage-icon-container">
                 <img
-                  src="./images/check-circle.svg"
+                  src="./assets/images/check-circle.svg"
                   alt=""
                   class="img-contain"
                 />
@@ -184,7 +175,7 @@
             <li class="usage-item">
               <div class="usage-icon-container">
                 <img
-                  src="./images/check-circle.svg"
+                  src="./assets/images/check-circle.svg"
                   alt=""
                   class="img-contain"
                 />
@@ -194,14 +185,14 @@
             <li class="usage-item">
               <div class="usage-icon-container">
                 <img
-                  src="./images/check-circle.svg"
+                  src="./assets/images/check-circle.svg"
                   alt=""
                   class="img-contain"
                 />
               </div>
               <p class="text">Нічник в дитячу кімнату</p>
             </li>
-          </ul>
+          </div>
         </div>
       </div>
       <!-- ///////////////////////////////////////// -->
@@ -213,13 +204,17 @@
             <!-- Slides -->
             <div class="slide swiper-slide">
               <div class="instructions-img-container">
-                <img src="./images/remote.png" alt="" class="img-contain" />
+                <img
+                  src="./assets/images/remote.png"
+                  alt=""
+                  class="img-contain"
+                />
               </div>
             </div>
             <div class="slide swiper-slide">
               <div class="instructions-img-container">
                 <img
-                  src="./images/instructions.jpeg"
+                  src="./assets/images/instructions.jpeg"
                   alt=""
                   class="img-contain"
                 />
@@ -229,18 +224,19 @@
           <!-- If we need navigation buttons -->
           <div class="instructions-prev navigation-button">
             <div class="arrow-prev arrow">
-              <img src="./images/arrow.png" class="arrow-img" />
+              <img src="./assets/images/arrow.png" class="arrow-img" />
             </div>
           </div>
           <div class="instructions-next navigation-button">
             <div class="arrow-next arrow">
-              <img src="./images/arrow.png" class="arrow-img" />
+              <img src="./assets/images/arrow.png" class="arrow-img" />
             </div>
           </div>
         </div>
       </div>
 
-      <!-- ///////////////////////////////////////// -->
+      <!-- /////////////////////////////////////////////// -->
+
       <div class="throw-section">
         <div class="gif-container">
           <div class="iframe-container">
@@ -252,19 +248,21 @@
           </div>
         </div>
       </div>
+
       <!-- ///////////////////////////////////////// -->
+
       <div class="answers-section">
         <div class="text-content">
           <div class="answers-body">
-            <h2 class="answers-header">Питання - відповідь</h2>
+            <h2 class="answers-header header-2">Питання - відповідь</h2>
 
             <div class="acardion">
               <div id="1" class="acardion-item">
                 <div data-id="1" class="acardion-item-top">
-                  <div class="acardion-item-header">
+                  <div class="acardion-item-header text-bold">
                     Від чого працює проектор?
                   </div>
-                  <div class="acardion-item-button">+</div>
+                  <div class="acardion-item-button"></div>
                 </div>
 
                 <div class="acardion-item-body">
@@ -284,16 +282,25 @@
               </div>
               <div id="2" class="acardion-item">
                 <div data-id="2" class="acardion-item-top">
-                  <div class="acardion-item-header">Що входить в комплект?</div>
-                  <div class="acardion-item-button">+</div>
+                  <div class="acardion-item-header text-bold">
+                    Що входить в комплект?
+                  </div>
+                  <div class="acardion-item-button"></div>
                 </div>
 
                 <div class="acardion-item-body">
                   <div class="acardion-item-content">
                     <ul class="acardion-list">
-                      <li class="text">Проектор Svitlo</li>
-                      <li class="text">Пульт управління + батарейки</li>
-                      <li class="text">USB кабель</li>
+                      <li class="text">
+                        Проектор <span class="text-bold">Svitlo</span>
+                      </li>
+                      <li class="text">
+                        Пульт управління
+                        <span class="text-bold">+</span> батарейки
+                      </li>
+                      <li class="text">
+                        <span class="text-bold">USB</span> кабель
+                      </li>
                       <li class="text">Інструкція</li>
                       <li class="text">Наліпка</li>
                     </ul>
@@ -304,15 +311,18 @@
               </div>
               <div id="3" class="acardion-item">
                 <div data-id="3" class="acardion-item-top">
-                  <div class="acardion-item-header">
+                  <div class="acardion-item-header text-bold">
                     Чи є гарантія на товар?
                   </div>
-                  <div class="acardion-item-button">+</div>
+                  <div class="acardion-item-button"></div>
                 </div>
 
                 <div class="acardion-item-body">
                   <div class="acardion-item-content">
-                    <p class="text">Гарантія на проектор — 1 рік.</p>
+                    <p class="text">
+                      Гарантія на проектор —
+                      <span class="text-bold">1 рік.</span>
+                    </p>
                   </div>
                 </div>
 
@@ -320,17 +330,26 @@
               </div>
               <div id="4" class="acardion-item">
                 <div data-id="4" class="acardion-item-top">
-                  <div class="acardion-item-header">
+                  <div class="acardion-item-header text-bold">
                     Варіанти оплати замовлення.
                   </div>
-                  <div class="acardion-item-button">+</div>
+                  <div class="acardion-item-button"></div>
                 </div>
 
                 <div class="acardion-item-body">
                   <div class="acardion-item-content">
-                    <p class="text">Можливі 2 варіанти оплати:</p>
-                    <p class="text">- При отриманні на пошті</p>
-                    <p class="text">- Повна оплата на карту</p>
+                    <div>
+                      <p class="text">
+                        Можливі <span class="text-bold">2</span> варіанти
+                        оплати:
+                      </p>
+                      <p class="text">
+                        <span class="text-bold">-</span> При отриманні на пошті
+                      </p>
+                      <p class="text">
+                        <span class="text-bold">-</span> Повна оплата на карту
+                      </p>
+                    </div>
                   </div>
                 </div>
 
@@ -338,24 +357,27 @@
               </div>
             </div>
 
-            <button class="home-button">Замовити зараз</button>
+            <a href="#form" class="button-link">
+              <button class="home-button button-light-gray">
+                Замовити зараз
+              </button>
+            </a>
           </div>
         </div>
       </div>
 
-      <!-- ///////////////////////////////////////// -->
+      <!-- /////////////////////////////////////////// -->
 
       <div class="reviews-section">
-        <div class="reviews-header">Відгуки наших клієнтів</div>
+        <div class="reviews-header header-2">Відгуки наших клієнтів</div>
 
         <div class="reviews-swiper swiper swiper-with-pagination">
           <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
+          <div class="swiper-wrapper" id="reviews">
             <div class="slide swiper-slide">
               <div class="reviews-img-container">
                 <img
-                  src="./images/roof-purple.jpeg"
+                  src="./assets/images/reviews-1.jpg"
                   alt=""
                   class="img-short-contain"
                 />
@@ -364,25 +386,27 @@
             <div class="slide swiper-slide">
               <div class="reviews-img-container">
                 <img
-                  src="./images/thanks.jpeg"
+                  src="./assets/images/reviews-2.jpg"
                   alt=""
                   class="img-short-contain"
                 />
               </div>
             </div>
           </div>
+          <!-- Slides -->
+
           <!-- If we need pagination -->
           <div class="reviews-pagination swiper-pagination"></div>
 
           <!-- If we need navigation buttons -->
           <div class="reviews-prev navigation-button prev-button">
             <div class="arrow-prev arrow">
-              <img src="./images/arrow.png" class="arrow-img" />
+              <img src="./assets/images/arrow.png" class="arrow-img" />
             </div>
           </div>
           <div class="reviews-next navigation-button next-button">
             <div class="arrow-next arrow">
-              <img src="./images/arrow.png" class="arrow-img" />
+              <img src="./assets/images/arrow.png" class="arrow-img" />
             </div>
           </div>
 
@@ -395,7 +419,7 @@
 
       <div class="delivery-section">
         <div class="text-content">
-          <div class="delivery-header">ДОСТАВКА І ОПЛАТА</div>
+          <div class="delivery-header header-1">ДОСТАВКА І ОПЛАТА</div>
 
           <div class="delivery-body">
             <div class="delivery-line">
@@ -404,13 +428,19 @@
               <div class="delivery-short">
                 <div class="delivery-circle">
                   <div class="delivery-icon-container">
-                    <img src="./images/list.svg" alt="" class="img-contain" />
+                    <img
+                      src="./assets/images/list.svg"
+                      alt=""
+                      class="img-contain"
+                    />
                   </div>
                 </div>
               </div>
 
               <div class="delivery-long text-left">
-                <p class="text">Залиште заявку на сайті</p>
+                <p class="text">
+                  Залиште <span class="text-bold">заявку</span> на сайті
+                </p>
               </div>
             </div>
             <!-- ////////////////////////////////////////////////////////////// -->
@@ -422,76 +452,98 @@
               <div class="delivery-long"></div>
             </div>
             <!-- ///////////////////////////////////////////////////////////// -->
-            <div class="delivery-line">
-              <div class="delivery-long text-right desctop">
-                <p class="text">Оператор уточнить деталі замовлення</p>
-              </div>
-              <div class="delivery-short">
-                <div class="delivery-circle">
-                  <div class="delivery-icon-container">
-                    <img src="./images/user.svg" alt="" class="img-contain" />
-                  </div>
-                </div>
-              </div>
-              <div class="delivery-long text-left">
-                <p class="text mobile">Оператор уточнить деталі замовлення</p>
-              </div>
-            </div>
-            <!-- ////////////////////////////////////////////////////////////// -->
-
-            <div class="delivery-line">
-              <div class="delivery-long desctop"></div>
-              <div class="delivery-short">
-                <div class="delivery-pole"></div>
-              </div>
-              <div class="delivery-long"></div>
-            </div>
-
-            <!-- ////////////////////////////////////////////////////////////// -->
-            <div class="delivery-line">
-              <div class="delivery-long desctop"></div>
-
-              <div class="delivery-short">
-                <div class="delivery-circle">
-                  <div class="delivery-icon-container">
-                    <img src="./images/list.svg" alt="" class="img-contain" />
-                  </div>
-                </div>
-              </div>
-
-              <div class="delivery-long text-left">
-                <p class="text">Доставка 1 - 3 дні Новою поштою</p>
-              </div>
-            </div>
-            <!-- ////////////////////////////////////////////////////////////// -->
-            <div class="delivery-line">
-              <div class="delivery-long desctop"></div>
-              <div class="delivery-short">
-                <div class="delivery-pole"></div>
-              </div>
-              <div class="delivery-long"></div>
-            </div>
-            <!-- ///////////////////////////////////////////////////////////// -->
-
             <div class="delivery-line">
               <div class="delivery-long text-right desctop">
                 <p class="text">
-                  Оплата після отримання у відділенні Нової пошти або
-                  передоплатою на карту
+                  Оператор <span class="text-bold">уточнить</span> деталі
+                  замовлення
                 </p>
               </div>
               <div class="delivery-short">
                 <div class="delivery-circle">
                   <div class="delivery-icon-container">
-                    <img src="./images/user.svg" alt="" class="img-contain" />
+                    <img
+                      src="./assets/images/user.svg"
+                      alt=""
+                      class="img-contain"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="delivery-long text-left">
+                <p class="text mobile">
+                  Оператор <span class="text-bold">уточнить</span> деталі
+                  замовлення
+                </p>
+              </div>
+            </div>
+            <!-- ////////////////////////////////////////////////////////////// -->
+
+            <div class="delivery-line">
+              <div class="delivery-long desctop"></div>
+              <div class="delivery-short">
+                <div class="delivery-pole"></div>
+              </div>
+              <div class="delivery-long"></div>
+            </div>
+
+            <!-- ////////////////////////////////////////////////////////////// -->
+            <div class="delivery-line">
+              <div class="delivery-long desctop"></div>
+
+              <div class="delivery-short">
+                <div class="delivery-circle">
+                  <div class="delivery-icon-container">
+                    <img
+                      src="./assets/images/list.svg"
+                      alt=""
+                      class="img-contain"
+                    />
                   </div>
                 </div>
               </div>
 
               <div class="delivery-long text-left">
-                <p class="text mobile">
-                  Оплата після отримання у відділенні Нової пошти або
-                  передоплатою на карту
+                <p class="text">
+                  Доставка <span class="text-bold">1 - 3 дні</span> Новою поштою
+                </p>
+              </div>
+            </div>
+            <!-- ////////////////////////////////////////////////////////////// -->
+            <div class="delivery-line">
+              <div class="delivery-long desctop"></div>
+              <div class="delivery-short">
+                <div class="delivery-pole"></div>
+              </div>
+              <div class="delivery-long"></div>
+            </div>
+            <!-- ///////////////////////////////////////////////////////////// -->
+
+            <div class="delivery-line">
+              <div class="delivery-long text-right desctop">
+                <p class="text-min">
+                  Оплата <span class="bold">після отримання</span> у відділенні
+                  Нової пошти або <span class="bold">передоплатою </span>на
+                  карту
+                </p>
+              </div>
+              <div class="delivery-short">
+                <div class="delivery-circle">
+                  <div class="delivery-icon-container">
+                    <img
+                      src="./assets/images/user.svg"
+                      alt=""
+                      class="img-contain"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="delivery-long text-left">
+                <p class="text min mobile">
+                  Оплата <span class="bold">після отримання</span> у відділенні
+                  Нової пошти або <span class="bold">передоплатою </span>на
+                  карту
                 </p>
               </div>
             </div>
@@ -503,15 +555,19 @@
       <!-- //////////////////////////////////////// -->
 
       <div class="spaceman-section">
-        <div class="spaceman-header">Проектор «Астронавт»</div>
+        <div class="spaceman-header header-2">Проектор «Астронавт»</div>
 
         <div class="spaceman-swiper swiper">
           <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
+          <div class="swiper-wrapper" id="spaceman">
             <!-- Slides -->
             <div class="slide swiper-slide">
               <div class="spaceman-img-container">
-                <img src="./images/spaceman.jpeg" alt="" class="img-cover" />
+                <img
+                  src="./assets/images/spaceman.jpeg"
+                  alt=""
+                  class="img-cover"
+                />
               </div>
             </div>
 
@@ -532,37 +588,16 @@
                 ></iframe>
               </div>
             </div>
-
-            <div class="slide swiper-slide">
-              <div class="spaceman-img-container">
-                <img src="./images/spaceman1.jpeg" alt="" class="img-cover" />
-              </div>
-            </div>
-            <div class="slide swiper-slide">
-              <div class="spaceman-img-container">
-                <img src="./images/spaceman2.jpeg" alt="" class="img-cover" />
-              </div>
-            </div>
-            <div class="slide swiper-slide">
-              <div class="spaceman-img-container">
-                <img src="./images/spaceman3.jpeg" alt="" class="img-cover" />
-              </div>
-            </div>
-            <div class="slide swiper-slide">
-              <div class="spaceman-img-container">
-                <img src="./images/spaceman4.jpeg" alt="" class="img-cover" />
-              </div>
-            </div>
           </div>
           <!-- If we need navigation buttons -->
           <div class="spaceman-prev navigation-button prev-button">
             <div class="arrow-prev arrow">
-              <img src="./images/arrow.png" class="arrow-img" />
+              <img src="./assets/images/arrow.png" class="arrow-img" />
             </div>
           </div>
           <div class="spaceman-next navigation-button next-button">
             <div class="arrow-next arrow">
-              <img src="./images/arrow.png" class="arrow-img" />
+              <img src="./assets/images/arrow.png" class="arrow-img" />
             </div>
           </div>
         </div>
@@ -590,34 +625,114 @@
       <!-- //////////////////////////////////////// -->
 
       <div class="table-section">
-        <img src="./images/table.jpg" alt="" />
+        <div class="table">
+          <div class="table-cell-img">
+            <img
+              src="./assets/images/table-logo.jpg"
+              alt=""
+              class="img-contain"
+            />
+          </div>
+          <div class="table-cell-img">
+            <img
+              src="./assets/images/table-lamp.jpg"
+              alt=""
+              class="img-contain"
+            />
+          </div>
+          <div class="table-cell-img">
+            <img
+              src="./assets/images/table-spaceman.jpg"
+              alt=""
+              class="img-contain"
+            />
+          </div>
+
+          <div class="table-cell-text first-cell">Назва</div>
+          <div class="table-cell-text">Проектор Svitlo</div>
+          <div class="table-cell-text">Проектор Астронавт</div>
+          <!-- /////////////////////////////////////////////////// -->
+          <div class="table-cell-text first-cell">Ефект світіння</div>
+          <div class="table-cell-text">Кольорове небо</div>
+          <div class="table-cell-text">Космічна туманність</div>
+          <!-- /////////////////////////////////////////////////// -->
+          <div class="table-cell-text first-cell">Вбудована колонка</div>
+          <div class="table-cell-text">+</div>
+          <div class="table-cell-text">-</div>
+          <!-- /////////////////////////////////////////////////// -->
+          <div class="table-cell-text first-cell">Кількість кольорів</div>
+          <div class="table-cell-text">4</div>
+          <div class="table-cell-text">3</div>
+          <!-- /////////////////////////////////////////////////// -->
+          <div class="table-cell-text first-cell">
+            Поєднання кольорів між собою
+          </div>
+          <div class="table-cell-text">+</div>
+          <div class="table-cell-text">+</div>
+          <!-- /////////////////////////////////////////////////// -->
+          <div class="table-cell-text first-cell">Управління</div>
+          <div class="table-cell-text">Пульт</div>
+          <div class="table-cell-text">Пульт</div>
+          <!-- /////////////////////////////////////////////////// -->
+          <div class="table-cell-text first-cell">Живлення</div>
+          <div class="table-cell-text">Розетка, павербенк</div>
+          <div class="table-cell-text">Розетка, павербенк</div>
+          <!-- /////////////////////////////////////////////////// -->
+          <div class="table-cell-text first-cell">Площа покриття</div>
+          <div class="table-cell-text">Більша</div>
+          <div class="table-cell-text">Менша</div>
+          <!-- /////////////////////////////////////////////////// -->
+          <div class="table-cell-text first-cell">Напрям Проекції</div>
+          <div class="table-cell-text">Тільки вгору</div>
+          <div class="table-cell-text">В будь яку точку</div>
+          <!-- /////////////////////////////////////////////////// -->
+          <div class="table-cell-text first-cell">Ціна</div>
+          <div class="table-cell-text">1250 грн</div>
+          <div class="table-cell-text">1500 грн</div>
+          <!-- /////////////////////////////////////////////////// -->
+        </div>
       </div>
     </div>
 
     <!-- //////////////////////////////////////// -->
 
-    <div class="form-section">
+    <div id="form" class="form-section">
       <div class="form-background">
-        <img src="./images/room.jpeg" alt="" class="img-cover" />
+        <img src="./assets/images/examples-6.jpg" alt="" class="img-cover" />
         <div class="form-cover"></div>
       </div>
       <div class="wrapper">
         <div class="form-content">
           <div class="form-header-container">
-            <div class="form-header">ЦІНА</div>
-            <div class="form-header">
+            <div class="header-2">ЦІНА</div>
+            <div class="header-2">
               1250 грн <span class="red-text crossed-text">1450грн</span>
             </div>
-            <div class="form-subheader">Другий проектор — 1100 грн</div>
+            <div class="form-subheader text-medium">
+              Другий проектор — 1100 грн
+            </div>
           </div>
 
-          <form class="form">
+          <form
+            action="https://formsubmit.co/zorenkoi956@gmail.com"
+            method="POST"
+            class="form"
+          >
+            <input type="hidden" name="_subject" value="test my bestie" />
+            <input
+              type="hidden"
+              name="_next"
+              value="http://2864719.yz531544.web.hosting-test.net/congratulations.html"
+            />
+
             <div class="form-input-container">
               <label for="" class="form-label">Ім'я та прізвище</label>
               <input
                 autocomplete="name"
                 type="text"
-                name="name"
+                name="Ім'я"
+                id="name"
+                required
                 class="form-input"
                 placeholder="Введіть ім'я та прізвище"
               />
@@ -626,25 +741,42 @@
               <label for="" class="form-label">Номер телефону*</label>
               <input
                 autocomplete="tel"
-                type="text"
-                name="tel"
+                type="tel"
+                name="Телефон"
+                id="tel"
+                required
                 class="form-input"
                 placeholder="Введіть номер телефону"
               />
             </div>
             <div class="form-input-container">
               <label for="" class="form-label"
-                >Місто і відділення нової пошти*</label
+                >Місто або населений пункт*</label
               >
               <input
                 type="text"
-                name="city"
+                name="Населений пункт"
+                id="city"
+                required
                 class="form-input"
-                placeholder="Введіть місто і відділення нової пошти"
+                placeholder="Введіть місто або населений пункт"
+              />
+            </div>
+            <div class="form-input-container">
+              <label for="" class="form-label">Відділення нової пошти*</label>
+              <input
+                type="number"
+                name="Номер нової пошти"
+                id="postOfficeNumber"
+                required
+                class="form-input"
+                placeholder="Введіть відділення нової пошти"
               />
             </div>
 
-            <button class="form-button">Замовити</button>
+            <button type="submit" class="form-button button-light-white">
+              Замовити
+            </button>
           </form>
         </div>
       </div>
@@ -655,29 +787,33 @@
     <footer class="footer">
       <div class="wrapper">
         <div class="text-content">
-          <div class="address-text">
-            м. Київ, вул. Електротехнічна, <span class="phone-text">4</span>
+          <div class="text address-text">
+            м. Київ, вул. Електротехнічна, <span class="text-bold">4</span>
           </div>
           <div class="phone-text-container">
-            <div class="phone-text">+000000000000</div>
-            <div class="phone-text">+000000000000</div>
+            <div class="text-medium">+000000000000</div>
+            <div class="text-medium">+000000000000</div>
           </div>
           <div class="time-text-container">
-            <div class="time-text">
-              Пн-Пт <span class="phone-text">10:00-19:30</span>
+            <div class="text">
+              Пн-Пт <span class="text-bold">10:00-19:30</span>
             </div>
-            <div class="time-text">
-              Cб-Нд <span class="phone-text">10:00-19:00</span>
+            <div class="text">
+              Cб-Нд <span class="text-bold">10:00-19:00</span>
             </div>
           </div>
 
           <div class="copyright">© All Rights Reserved. SVITLO</div>
 
           <div class="link-container">
-            <div class="link-text">Підписуйтесь на наш інстаграм:</div>
+            <div class="text">Підписуйтесь на наш інстаграм:</div>
             <a href="/">
               <div class="link-icon">
-                <img src="./images/inst.svg" alt="inst" class="img-contain" />
+                <img
+                  src="./assets/images/inst.svg"
+                  alt="inst"
+                  class="img-contain"
+                />
               </div>
             </a>
           </div>
@@ -687,6 +823,18 @@
 
     <script src="https://player.vimeo.com/api/player.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./index.js"></script>
+    <script src="./assets/js/index.js"></script>
+    <!-- ............................................................................. -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+      integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/phone-mask.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#tel").mask("+38(099) 99-99-999");
+      });
+    </script>
   </body>
 </html>
